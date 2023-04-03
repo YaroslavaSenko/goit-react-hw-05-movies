@@ -37,7 +37,7 @@ const handleFormSubmit = search => {
 
         return(
             <main>
-            {error && <p>Try again</p>}
+            {error && error.message}
             <SearchBar onSubmit={handleFormSubmit} />
       
             {movies && <MoviesList movies={movies} />}
