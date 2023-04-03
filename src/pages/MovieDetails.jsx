@@ -46,7 +46,7 @@ const MovieDetails = () => {
 
   return (
     <main>
-      {error && <p>Try again</p>}
+      {error && error.message}
       {showLoader && <div>Load info</div>}
       {movie && !showLoader && (
         <>
