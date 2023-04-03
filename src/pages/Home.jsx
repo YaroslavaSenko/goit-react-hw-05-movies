@@ -21,6 +21,7 @@ import MoviesList from '../components/MoviesList/MoviesList';
 
         return(
         <main>
+            {error && error.message}
             <h2>Trendin movies</h2>
 
             {trendingMovies && <MoviesList movies={trendingMovies} />}
